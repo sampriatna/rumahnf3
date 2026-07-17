@@ -1,0 +1,19 @@
+{
+  "name": "POS Kasir NF3",
+  "short_name": "POS NF3",
+  "description": "Kasir tablet — Nusa Food Group",
+  "start_url": "/pos/login",
+  "scope": "/pos",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e293b",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

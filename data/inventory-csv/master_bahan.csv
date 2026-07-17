@@ -1,0 +1,96 @@
+kode_bahan,nama_baku,kategori,satuan_beli,satuan_pakai,konversi,harga_per_satuan_pakai,supplier_utama,stok_minimum,stok_aman,stok_maksimum,status_aktif,metode_stok
+11x25,Plastik Es 11x25,Umum,pcs,pcs,1,8900,Djaja,0,0,0,Aktif,Distok
+1CUP,Kresek 1 Cup,Umum,pcs,pcs,1,6000,Djaja,0,0,0,Aktif,Distok
+2CUP,Kresek 2 Cup,Umum,pcs,pcs,1,6000,Djaja,0,0,0,Aktif,Distok
+ABCASIN,Kecap Asin (ABC),Umum,drigen,drigen,1,85000,Djaja,0,0,0,Aktif,Distok
+AYMBPT,Ayam Baput,Umum,pcs,pcs,1,3415,Suplier,0,0,0,Aktif,Distok
+AYMBSR,Ayam Besar,Umum,pcs,pcs,1,8475,Lotte Mart,0,0,0,Aktif,Distok
+AYMSDG,Ayam Sedang,Umum,pcs,pcs,1,7225,Lotte Mart,0,0,0,Aktif,Distok
+BAPUTG,Bawang Putih Goreng,Umum,gr,gr,1,0,Shopee,0,0,0,Aktif,Distok
+BBK,Bebek Ungkep,Umum,pcs,pcs,1,12000,Suplier,0,0,0,Aktif,Distok
+BEEF,Beef Slice,Umum,gr,gr,1,113,Suplier,0,0,0,Aktif,Distok
+BOXRB,Box Rice Bowl,Umum,pcs,pcs,1,30000,Djaja,0,0,0,Aktif,Distok
+BPOWDER,Baking Powder,Umum,btl,btl,1,6000,Djaja,0,0,0,Aktif,Distok
+BRS,Beras 1 Sak,Umum,kg,kg,1,13600,Pasar Jagasatru,0,0,0,Aktif,Distok
+CKR,Ceker,Umum,gr,gr,1,6,Offline Terdekat,0,0,0,Aktif,Distok
+CLEO,Cleo Botol,Umum,pcs,pcs,1,1619,Suplier,0,0,0,Aktif,Distok
+COLEK,Sabun Colek,Umum,pcs,pcs,1,5000,Djaja,0,0,0,Aktif,Distok
+CUP12,Cup 12oz Oval,Umum,roll,roll,1,18500,Djaja,0,0,0,Aktif,Distok
+CUPBL,Cup Buriumah L,Umum,roll,roll,1,31750,Kemasan Cirebon,0,0,0,Aktif,Distok
+CUPTH,Cup Teh,Umum,roll,roll,1,18000,Djaja,0,0,0,Aktif,Distok
+DAIA,Daia,Umum,pcs,pcs,1,1000,Djaja,0,0,0,Aktif,Distok
+DELBBQ,Saus BBQ (delmonte),Umum,kg,kg,1,34000,Djaja,0,0,0,Aktif,Distok
+DELBPP,Saus Black Paper (delmonte),Umum,kg,kg,1,35500,Djaja,0,0,0,Aktif,Distok
+DOWNY,Downy,Umum,pcs,pcs,1,417,Djaja,0,0,0,Aktif,Distok
+FOIL DIM,Alumunium Dimsum,Umum,pcs,pcs,1,2320,Djaja,0,0,0,Aktif,Distok
+FRTEA,Fruit Tea Apel,Umum,pcs,pcs,1,3750,Suplier,0,0,0,Aktif,Distok
+GLAB,Gula Aren Bubuk,Umum,gr,gr,1,270,Offline Terdekat,0,0,0,Aktif,Distok
+GLP,Gula Pasir,Umum,kg,kg,1,17500,Lotte Mart,0,0,0,Aktif,Distok
+GRM,Garam,Umum,pcs,pcs,1,2000,Djaja,0,0,0,Aktif,Distok
+GRPUBUAH,Garpu Buah,Umum,pcs,pcs,1,0,Shopee,0,0,0,Aktif,Distok
+GULCAIR,Gula Cair,Umum,gr,gr,1,15,Djaja,0,0,0,Aktif,Distok
+HNDSOAP,Hand Soap,Umum,drigen,drigen,1,55000,Lotte Mart,0,0,0,Aktif,Distok
+IKNLL,Ikan Lele Marinasi,Umum,pcs,pcs,1,4400,Suplier,0,0,0,Aktif,Distok
+IKNNL,Ikan Nila Marinasi,Umum,pcs,pcs,1,4353,Suplier,0,0,0,Aktif,Distok
+JKUT,Jukut,Umum,pcs,pcs,1,3750,Pasar Jagasatru,0,0,0,Aktif,Distok
+KECMAS,Kecap Manis (indofood),Umum,drigen,drigen,1,125000,Lotte Mart,0,0,0,Aktif,Distok
+KJU,Keju,Umum,pcs,pcs,1,13750,Djaja,0,0,0,Aktif,Distok
+KLIR1000,Klir 1000ml,Umum,pcs,pcs,1,35500,Djaja,0,0,0,Aktif,Distok
+KLIR25,Klir 25ml,Umum,pcs,pcs,1,10000,Djaja,0,0,0,Aktif,Distok
+KLIR35,Klir 35ml,Umum,pcs,pcs,1,11500,Djaja,0,0,0,Aktif,Distok
+KRTSBUNG,Kertas Nasi Bunga,Umum,pcs,pcs,1,20500,Djaja,0,0,0,Aktif,Distok
+KULDIM,Kulit Dimsum,Umum,pcs,pcs,1,15500,Frozen Food,0,0,0,Aktif,Distok
+LBM,Lunch Box M,Umum,pcs,pcs,1,580,Djaja,0,0,0,Aktif,Distok
+LBS,Lunch Box S,Umum,pcs,pcs,1,535,Djaja,0,0,0,Aktif,Distok
+LCIKLNG,Leci Kaleng,Umum,pcs,pcs,1,24000,Lotte Mart,0,0,0,Aktif,Distok
+LPTN LC,Lipton Leci,Umum,pcs,pcs,1,47000,Djaja,0,0,0,Aktif,Distok
+LPTN LMN,Lipton Lemon,Umum,pcs,pcs,1,47000,Djaja,0,0,0,Aktif,Distok
+MAMAYO,Mayonaise Mamayo,Umum,kg,kg,1,22000,Djaja,0,0,0,Aktif,Distok
+MCN,Micin (ajinomoto),Umum,gr,gr,1,34,Djaja,0,0,0,Aktif,Distok
+MIKSAM,Mika Sambal,Umum,pcs,pcs,1,7000,Djaja,0,0,0,Aktif,Distok
+MIKSOS,Mika Sosis,Umum,pcs,pcs,1,18500,—,0,0,0,Aktif,Distok
+MILO,Milo,Umum,pcs,pcs,1,2000,Djaja,0,0,0,Aktif,Distok
+MINGOR,Minyak Goreng,Umum,ml,ml,1,22,Djaja,0,0,0,Aktif,Distok
+MMALIME,Mama Lime,Umum,pcs,pcs,1,799,Lotte Mart,0,0,0,Aktif,Distok
+MXTEAL,Maxtea Lemon Tea,Umum,pcs,pcs,1,45500,Djaja,0,0,0,Aktif,Distok
+NGTMBL,Nuget Mabel,Umum,pcs,pcs,1,49500,Lotte Mart,0,0,0,Aktif,Distok
+PASVAN,Pasta Vanilli,Umum,btl,btl,1,9500,Djaja,0,0,0,Aktif,Distok
+PRIMA,Prima Botol,Umum,pcs,pcs,1,1583,Suplier,0,0,0,Aktif,Distok
+PSAMPAH,Plastik Sampah,Umum,pcs,pcs,1,21000,Djaja,0,0,0,Aktif,Distok
+RCK,Racik Ayam,Umum,pcs,pcs,1,1600,Suplier,0,0,0,Aktif,Distok
+ROYSAP,Royco Sapi,Umum,gr,gr,1,36,Djaja,0,0,0,Aktif,Distok
+SATER,Saori Teriyaki,Umum,L,L,1,53000,Djaja,0,0,0,Aktif,Distok
+SATIR,Saori Tiram,Umum,L,L,1,54000,Djaja,0,0,0,Aktif,Distok
+SAYAM,Sasa Ayam,Umum,gr,gr,1,30,Suplier,0,0,0,Aktif,Distok
+SBUBUR,Sterefoam Bubur,Umum,pcs,pcs,1,345,Djaja,0,0,0,Aktif,Distok
+SEDTN,Sedotan,Umum,pcs,pcs,1,11000,Djaja,0,0,0,Aktif,Distok
+Seel,Cup Siller Polos,Umum,pcs,pcs,1,33000,Djaja,0,0,0,Aktif,Distok
+SEERAK,Serabut Kawat,Umum,pcs,pcs,1,3500,Djaja,0,0,0,Aktif,Distok
+SOKLANTAI,SoKlin Lantai,Umum,pcs,pcs,1,458,Djaja,0,0,0,Aktif,Distok
+SOSDBD,Sosis Dobedoo,Umum,pcs,pcs,1,874,Lotte Mart,0,0,0,Aktif,Distok
+SPRTKCL,Sprite Kecil,Umum,pcs,pcs,1,2965,Lotte Mart,0,0,0,Aktif,Distok
+SRNGPLSTK,Sarung Tangan Plastik,Umum,pcs,pcs,1,12000,Djaja,0,0,0,Aktif,Distok
+SRPLCH,Sirup Lychee squash,Umum,btl,btl,1,21000,Lotte Mart,0,0,0,Aktif,Distok
+SRPLCMJN,Sirup leci marjan,Umum,btl,btl,1,25200,Lotte Mart,0,0,0,Aktif,Distok
+SRPLMN,Sirup Lemon,Umum,btl,btl,1,25200,Lotte Mart,0,0,0,Aktif,Distok
+SRPMNGG,Sirup manggo squash,Umum,btl,btl,1,14000,Surya Toserba,0,0,0,Aktif,Distok
+SRPSTRWB,Sirup Strawberry,Umum,btl,btl,1,25000,Lotte Mart,0,0,0,Aktif,Distok
+SStwb,Selai Strawberry,Umum,gr,gr,1,52,Djaja,0,0,0,Aktif,Distok
+STRS,Soda Tanpa Rasa,Umum,pcs,pcs,1,5000,Lotte Mart,0,0,0,Aktif,Distok
+SUMPT,Sumpit Kayu,Umum,pcs,pcs,1,8000,Djaja,0,0,0,Aktif,Distok
+SUSFRES,Susu freshmilk,Umum,L,L,1,16146,Suplier,0,0,0,Aktif,Distok
+TAPIOKA,Tepung Tapioka,Umum,gr,gr,1,17,Djaja,0,0,0,Aktif,Distok
+TBTLPSTK,Teh Botol Plastik,Umum,pcs,pcs,1,3750,Suplier,0,0,0,Aktif,Distok
+TEPROT,Tepung Roti,Umum,gr,gr,1,15,Djaja,0,0,0,Aktif,Distok
+TERAS,Tepung Beras,Umum,gr,gr,1,20,Djaja,0,0,0,Aktif,Distok
+THERCIL,Thermal Kecil,Umum,pcs,pcs,1,28500,Offline Terdekat,0,0,0,Aktif,Distok
+THPOCI,Teh Poci,Umum,pcs,pcs,1,3600,Djaja,0,0,0,Aktif,Distok
+TISU,Tisu,Umum,pcs,pcs,1,1979,Djaja,0,0,0,Aktif,Distok
+TMTT,TMT Tarik,Umum,pcs,pcs,1,33000,Djaja,0,0,0,Aktif,Distok
+TPMZN,Tepung Maizena,Umum,gr,gr,1,23,Suplier,0,0,0,Aktif,Distok
+TRGU,Terigu,Umum,gr,gr,1,13,Djaja,0,0,0,Aktif,Distok
+TRSI,Terasi,Umum,pcs,pcs,1,425,Djaja,0,0,0,Aktif,Distok
+UDNG,Udang Beku,Umum,gr,gr,1,118,Lotte Mart,0,0,0,Aktif,Distok
+UK15,Kresek Uk15,Umum,pcs,pcs,1,20000,Djaja,0,0,0,Aktif,Distok
+UK24,Kresek Uk24,Umum,pcs,pcs,1,20000,Djaja,0,0,0,Aktif,Distok
+UK30,Kresek Uk30,Umum,pcs,pcs,1,8400,Djaja,0,0,0,Aktif,Distok

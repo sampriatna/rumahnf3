@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --nf3-primary-800: #0b2745;
+    --nf3-primary-900: #071b31;
+    --nf3-surface: #f5f8fb;
+    --nf3-surface-raised: #ffffff;
+    --nf3-border: #e2e8f0;
+    --nf3-text: #0f172a;
+    --nf3-text-muted: #64748b;
+    --nf3-accent: #c99a2e;
+    --nf3-sidebar-width: 15rem;
+    --nf3-topbar-height: 3.5rem;
+  }
+
+  body {
+    @apply m-0 bg-surface text-slate-900;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  :where(a, button, input, select, textarea, [role="button"]):focus-visible {
+    @apply outline-none ring-2 ring-navy-500 ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .nf3-input {
+    @apply block w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400;
+  }
+
+  .nf3-select {
+    @apply block w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900;
+  }
+
+  .nf3-textarea {
+    @apply block w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400;
+  }
+
+  .nf3-field-label {
+    @apply text-xs font-bold text-slate-600;
+  }
+
+  .nf3-subtle {
+    @apply text-xs text-slate-500;
+  }
+
+  .nf3-kv-grid {
+    @apply grid grid-cols-1 gap-x-4 gap-y-1 text-sm sm:grid-cols-2;
+  }
+
+  .nf3-kv-row {
+    @apply flex flex-wrap gap-1;
+  }
+
+  .nf3-chip {
+    @apply rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600 whitespace-nowrap;
+  }
+
+  .nf3-chip-active {
+    @apply rounded-full bg-navy-800 px-2.5 py-1 text-xs font-semibold text-white whitespace-nowrap;
+  }
+
+  .nf3-alert {
+    @apply mb-4 flex items-start gap-2.5 rounded-lg border px-4 py-3 text-sm;
+  }
+
+  .nf3-alert-success {
+    @apply border-emerald-300 bg-emerald-50 text-emerald-900;
+  }
+
+  .nf3-alert-info {
+    @apply border-blue-300 bg-blue-50 text-blue-900;
+  }
+
+  .nf3-alert-warning {
+    @apply border-amber-300 bg-amber-50 text-amber-900;
+  }
+
+  .nf3-alert-danger {
+    @apply border-rose-300 bg-rose-50 text-rose-900;
+  }
+
+  .pos-touch-btn {
+    @apply min-h-10 rounded-lg px-3 py-2 text-sm font-bold;
+  }
+
+  .panel {
+    @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-navy-800 px-5 py-3 text-sm font-bold text-white transition hover:bg-navy-900 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-slate-800 transition hover:border-gold-400 hover:text-navy-800;
+  }
+
+  /* KDS — form gelap agar select/input tidak putih di tablet */
+  .kds-field {
+    @apply rounded-lg border border-navy-500 bg-navy-900 px-3 py-2.5 text-sm font-medium text-white placeholder:text-slate-400;
+    color-scheme: dark;
+  }
+
+  .kds-field option {
+    @apply bg-navy-900 text-white;
+  }
+
+  /* Portal staf — interior staff.nf3.company */
+  .staff-app {
+    @apply bg-surface;
+    background-image:
+      radial-gradient(ellipse 120% 80% at 50% -20%, rgba(201, 154, 46, 0.08), transparent 55%),
+      linear-gradient(180deg, #eef4fa 0%, #f5f8fb 28%, #f5f8fb 100%);
+  }
+
+  .staff-app-glow {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, transparent 100%);
+  }
+
+  .staff-hero {
+    @apply bg-gradient-to-br from-navy-800 via-navy-800 to-navy-900;
+    background-image:
+      linear-gradient(135deg, rgba(201, 154, 46, 0.12) 0%, transparent 45%),
+      linear-gradient(to bottom right, #0b2745, #071b31);
+  }
+
+  .staff-card {
+    @apply rounded-2xl border border-slate-200/80 bg-white/95 shadow-sm backdrop-blur-sm;
+  }
+
+  .staff-card-interactive {
+    @apply staff-card transition hover:border-gold-400/50 hover:shadow-soft active:scale-[0.99];
+  }
+
+  .staff-section-title {
+    @apply text-[11px] font-bold uppercase tracking-widest text-slate-400;
+  }
+
+  .staff-callout-warn {
+    @apply staff-card-interactive flex items-start gap-3 border-amber-200/80 bg-gradient-to-r from-amber-50 to-white p-4;
+  }
+
+  .staff-callout-info {
+    @apply staff-card flex items-start gap-2 border-slate-200/80 bg-white p-4 text-sm;
+  }
+
+  .staff-empty {
+    @apply staff-card flex flex-col items-center gap-2 p-10 text-center text-slate-500;
+  }
+
+  .dashboard-section-title {
+    @apply border-b border-slate-200 pb-2 text-base font-black uppercase tracking-wide text-navy-800;
+  }
+
+  .pos-shell {
+    @apply bg-surface;
+  }
+
+  .pos-panel {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-sm;
+  }
+
+  .pos-menu-tile {
+    @apply pos-panel flex min-h-[7.5rem] w-full flex-col overflow-hidden p-0 text-left transition hover:border-gold-400/60 hover:shadow-soft active:scale-[0.98];
+  }
+
+  .pos-cart-line {
+    @apply flex items-center gap-3 rounded-xl border border-slate-100 bg-slate-50/60 px-3 py-2.5;
+  }
+
+  .pos-qty-btn {
+    @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-lg font-bold text-navy-800 shadow-sm ring-1 ring-slate-200 transition hover:ring-gold-400 active:scale-95;
+  }
+
+  .pos-toolbar-btn {
+    @apply inline-flex h-10 shrink-0 items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 text-xs font-bold text-slate-700 transition hover:border-gold-400 hover:text-navy-800;
+  }
+
+  .pos-toolbar-btn--accent {
+    @apply border-amber-200 bg-amber-50 text-amber-900 hover:border-amber-300;
+  }
+
+  .pos-strip-card {
+    @apply min-w-[12.5rem] shrink-0 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm transition hover:border-gold-400/50;
+  }
+
+  .pos-cta-primary {
+    @apply btn-primary w-full py-4 text-base shadow-sm;
+  }
+
+  .pos-total-box {
+    @apply rounded-xl border border-navy-100 bg-gradient-to-br from-navy-50 to-white px-4 py-3;
+  }
+
+  .pos-drawer-shell {
+    @apply bg-surface;
+  }
+
+  .pos-drawer-aside {
+    @apply fixed inset-y-0 left-0 flex w-[17rem] -translate-x-full flex-col border-r border-slate-200 bg-white shadow-lg transition-transform duration-200 lg:static lg:translate-x-0 lg:shadow-none;
+  }
+
+  .pos-drawer-aside--open {
+    @apply translate-x-0;
+  }
+
+  .pos-drawer-aside--desktop {
+    @apply sticky top-0 h-screen;
+  }
+
+  .pos-drawer-toggle {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition hover:border-gold-400;
+  }
+}

@@ -1,0 +1,67 @@
+Sumber: c:\Users\Administrator\Downloads\Salinan dari template_inventory_fnb_multi_outlet_v3 - Barang_Masuk.csv
+Output: D:\Projects\rumah-nf3\data\inventory-csv\barang_masuk.csv
+Baris valid: 304
+Dilewati: 7
+Peringatan (lokasi default GDG): 70
+
+=== DILEWATI ===
+Baris 70: kode bahan kosong | kode=- tgl=-
+Baris 71: kode bahan kosong | kode=- tgl=-
+Baris 108: kode bahan kosong | kode=- tgl=15 Mei 2026
+Baris 247: kode bahan kosong | kode=- tgl=02 Juni 2026
+Baris 260: kode bahan kosong | kode=- tgl=04 Juni 2026
+Baris 271: kode bahan kosong | kode=- tgl=05 Juni 2026
+Baris 1022: kode bahan kosong | kode=- tgl=-
+
+=== LOKASI DEFAULT GDG (Juni dst — perbaiki di Sheets) ===
+Baris 240: MINGOR 2026-06-01 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 241: TAPIOKA 2026-06-01 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 242: AYMBPT 2026-06-01 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 243: SEDTN 2026-06-01 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 244: SATIR 2026-06-01 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 245: DELBBQ 2026-06-01 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 246: ABCASIN 2026-06-01 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 248: CUPBL 2026-06-02 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 249: TEPROT 2026-06-02 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 250: PSAMPAH 2026-06-02 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 251: TERAS 2026-06-02 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 252: TISU 2026-06-02 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 253: SUSFRES 2026-06-02 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 254: IKNNL 2026-06-02 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 255: CLEO 2026-06-03 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 256: CKR 2026-06-03 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 257: TRGU 2026-06-03 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 258: BOXRB 2026-06-03 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 259: PSAMPAH 2026-06-03 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 261: KLIR1000 2026-06-04 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 262: KLIR35 2026-06-04 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 263: KLIR25 2026-06-04 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 264: SUMPT 2026-06-04 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 265: DELBBQ 2026-06-04 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 266: FOIL DIM 2026-06-04 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 267: THERCIL 2026-06-04 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 269: MIKSAM 2026-06-05 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 270: TMTT 2026-06-05 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 272: MCN 2026-06-05 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 273: GRM 2026-06-05 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 274: TERAS 2026-06-05 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 275: MINGOR 2026-06-05 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 276: RCK 2026-06-05 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 277: DAIA 2026-06-05 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 278: GULCAIR 2026-06-06 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 279: DAIA 2026-06-06 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 280: SOKLANTAI 2026-06-06 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 281: DOWNY 2026-06-06 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 282: IKNLL 2026-06-06 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 283: LBM 2026-06-07 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 284: CUPTH 2026-06-07 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 285: KULDIM 2026-06-07 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 286: KRTSBUNG 2026-06-08 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 287: AYMBPT 2026-06-08 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 288: PRIMA 2026-06-08 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 289: FRTEA 2026-06-08 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 290: BEEF 2026-06-08 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 291: MINGOR 2026-06-09 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 292: ABCASIN 2026-06-09 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+Baris 293: MAMAYO 2026-06-09 — lokasi_tujuan kosong → diisi GDG (perbaiki di sheet asli)
+... +20 baris lagi

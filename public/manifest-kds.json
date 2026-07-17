@@ -1,0 +1,19 @@
+{
+  "name": "KDS Dapur/Bar NF3",
+  "short_name": "KDS NF3",
+  "description": "Kitchen Display — Nusa Food Group",
+  "start_url": "/kds",
+  "scope": "/kds",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#a1a1aa",
+  "theme_color": "#be123c",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
