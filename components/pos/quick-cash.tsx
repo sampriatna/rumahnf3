@@ -9,16 +9,24 @@ type Props = {
   outletId: string;
   orderId: string;
   payAction: (formData: FormData) => Promise<void>;
+  /** When true, only show cash suggestions — primary Bayar lives in PaymentSummary. */
+  hideSubmit?: boolean;
 };
 
-export function QuickCashPanel({ balance, outletId, orderId, payAction }: Props) {
+export function QuickCashPanel({
+  balance,
+  outletId,
+  orderId,
+  payAction,
+  hideSubmit = false
+}: Props) {
   const suggestions = suggestCashAmounts(balance);
   const [received, setReceived] = useState(suggestions[0] ?? balance);
   const change = calcChange(received, balance);
 
   return (
-    <div className="mb-6 rounded-xl border border-navy-100 bg-slate-50 p-4">
-      <p className="mb-2 text-sm font-bold text-navy-900">Quick Cash</p>
+    <div className="rounded-xl border border-navy-100 bg-slate-50 p-4">
+      <p className="mb-2 text-sm font-bold text-navy-900">Tunai Cepat</p>
       <div className="mb-3 grid grid-cols-3 gap-2">
         {suggestions.map((amt) => (
           <button
@@ -35,7 +43,7 @@ export function QuickCashPanel({ balance, outletId, orderId, payAction }: Props)
           </button>
         ))}
       </div>
-      <div className="mb-3 grid grid-cols-2 gap-3 text-sm">
+      <div className={`grid grid-cols-2 gap-3 text-sm ${hideSubmit ? "" : "mb-3"}`}>
         <div>
           <label className="text-xs font-bold text-slate-500">Uang diterima</label>
           <input
@@ -52,18 +60,25 @@ export function QuickCashPanel({ balance, outletId, orderId, payAction }: Props)
           <p className="text-lg font-black text-emerald-800">{formatRp(change)}</p>
         </div>
       </div>
-      <form action={payAction}>
-        <input type="hidden" name="outletId" value={outletId} />
-        <input type="hidden" name="orderId" value={orderId} />
-        <input type="hidden" name="method" value="cash" />
-        <button
-          type="submit"
-          disabled={received < balance}
-          className="btn-primary w-full py-3 text-sm disabled:opacity-50"
-        >
-          Bayar Cash {formatRp(balance)}
-        </button>
-      </form>
+      {hideSubmit ? (
+        <p className="mt-3 text-[11px] text-slate-500">
+          Estimasi kembalian saja — tekan <span className="font-bold text-navy-800">Bayar</span> di
+          bawah untuk menyelesaikan.
+        </p>
+      ) : (
+        <form action={payAction}>
+          <input type="hidden" name="outletId" value={outletId} />
+          <input type="hidden" name="orderId" value={orderId} />
+          <input type="hidden" name="method" value="cash" />
+          <button
+            type="submit"
+            disabled={received < balance}
+            className="btn-primary w-full py-3 text-sm disabled:opacity-50"
+          >
+            Bayar {formatRp(balance)}
+          </button>
+        </form>
+      )}
     </div>
   );
 }

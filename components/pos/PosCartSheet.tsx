@@ -19,12 +19,13 @@ export function PosCartSheet({
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="fixed bottom-5 right-5 z-30 flex items-center gap-2 rounded-full bg-navy-800 px-4 py-3 text-sm font-bold text-white shadow-lg lg:hidden"
+        className="fixed bottom-5 right-5 z-30 flex items-center gap-2 rounded-2xl bg-navy-800 px-5 py-3.5 text-sm font-bold text-white shadow-lg ring-2 ring-gold-400/40 lg:hidden"
         aria-label="Buka keranjang"
       >
         <ShoppingCart className="h-5 w-5" aria-hidden />
-        <span>{itemCount}</span>
-        <span className="text-gold-300">{cartTotalLabel}</span>
+        <span>Bayar</span>
+        <span className="rounded-md bg-navy-950/40 px-2 py-0.5 text-xs">{itemCount}</span>
+        <span className="text-gold-400">{cartTotalLabel}</span>
       </button>
 
       {open && (

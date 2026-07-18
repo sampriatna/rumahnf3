@@ -12,7 +12,7 @@ export function PlaceOrderButton({
   );
 }
 
-export function PaymentButton({ label = "Lanjut Bayar" }: { label?: string }) {
+export function PaymentButton({ label = "Bayar" }: { label?: string }) {
   return (
     <button type="submit" className="pos-cta-primary">
       {label}
@@ -20,7 +20,7 @@ export function PaymentButton({ label = "Lanjut Bayar" }: { label?: string }) {
   );
 }
 
-export function DraftButton({ label = "Hold" }: { label?: string }) {
+export function DraftButton({ label = "Tahan" }: { label?: string }) {
   return (
     <button type="submit" className="btn-secondary px-3 py-1.5 text-xs">
       {label}
