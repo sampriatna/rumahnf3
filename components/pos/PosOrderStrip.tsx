@@ -85,7 +85,7 @@ export function PosOrderStrip({
                   href={`/pos/split/${o.id}?outlet=${outletId}`}
                   className="btn-secondary px-2.5 py-2 text-[10px]"
                 >
-                  Split
+                  Pisah
                 </Link>
                 <form action={holdOrderAction}>
                   <input type="hidden" name="outletId" value={outletId} />

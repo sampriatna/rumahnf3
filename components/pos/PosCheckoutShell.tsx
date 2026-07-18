@@ -33,7 +33,7 @@ export function PosCheckoutShell({
           </p>
         </div>
         <span className="hidden rounded-lg bg-navy-800 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-gold-400 sm:inline">
-          Checkout
+          Pembayaran
         </span>
       </header>
       <main className="flex-1 px-4 py-4 lg:px-6 lg:py-5">{children}</main>

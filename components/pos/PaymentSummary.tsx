@@ -116,11 +116,11 @@ export function PaymentSummary({
           <input
             name="reason"
             type="text"
-            placeholder="Alasan hold (opsional)"
+            placeholder="Alasan tahan (opsional)"
             className="nf3-input min-w-0 flex-1"
           />
           <button type="submit" className="btn-secondary shrink-0 px-4 py-2 text-sm whitespace-nowrap">
-            Hold
+            Tahan
           </button>
         </form>
 
@@ -221,7 +221,7 @@ export function PaymentSummary({
             href={`/pos/split/${order.id}?outlet=${outletId}`}
             className="block text-center text-xs font-bold text-navy-700 underline"
           >
-            Split bill →
+            Pisah bill →
           </Link>
         )}
       </div>

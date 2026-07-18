@@ -60,7 +60,12 @@ export function QuickCashPanel({
           <p className="text-lg font-black text-emerald-800">{formatRp(change)}</p>
         </div>
       </div>
-      {!hideSubmit && (
+      {hideSubmit ? (
+        <p className="mt-3 text-[11px] text-slate-500">
+          Estimasi kembalian saja — tekan <span className="font-bold text-navy-800">Bayar</span> di
+          bawah untuk menyelesaikan.
+        </p>
+      ) : (
         <form action={payAction}>
           <input type="hidden" name="outletId" value={outletId} />
           <input type="hidden" name="orderId" value={orderId} />

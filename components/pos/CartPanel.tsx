@@ -120,7 +120,7 @@ export function OpenBillsPanel({
       {showHeld && (
         <div className="pos-panel shrink-0 p-4">
           <h3 className="mb-2 text-[10px] font-bold uppercase tracking-wide text-slate-400">
-            Draft / Hold Bill
+            Bill Ditahan
           </h3>
           <ul className="space-y-2 text-sm">
             {heldBills.map((o) => (
