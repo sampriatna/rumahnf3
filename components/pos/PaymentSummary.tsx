@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { formatRp } from "@/lib/finance";
 import type { PosOrder } from "@/lib/pos-kds-roadmap";
-import { paymentMethodDisplayName } from "@/lib/payment-method-service";
 import {
   addPaymentAction,
   payFullAction,
@@ -22,7 +21,6 @@ export function PaymentSummary({
   paid,
   paymentMethods,
   showQuickCash,
-  payOutletId,
   pendingKitchen,
   activeItemCount
 }: {
@@ -32,7 +30,8 @@ export function PaymentSummary({
   paid: number;
   paymentMethods: Array<{ value: string; label: string }>;
   showQuickCash: boolean;
-  payOutletId: string;
+  /** Kept for call-site compatibility; labels come from `paymentMethods`. */
+  payOutletId?: string;
   pendingKitchen: number;
   activeItemCount: number;
 }) {
@@ -40,6 +39,11 @@ export function PaymentSummary({
     if (showQuickCash && paymentMethods.some((m) => m.value === "cash")) return "cash";
     return paymentMethods[0]?.value ?? "cash";
   }, [paymentMethods, showQuickCash]);
+
+  const methodLabel = useMemo(() => {
+    const map = new Map(paymentMethods.map((m) => [m.value, m.label]));
+    return (methodId: string) => map.get(methodId) ?? methodId;
+  }, [paymentMethods]);
 
   const [method, setMethod] = useState(defaultMethod);
   const isCash = method === "cash";
@@ -84,7 +88,7 @@ export function PaymentSummary({
                   }`}
                 >
                   <span>
-                    {payOutletId ? paymentMethodDisplayName(payOutletId, p.method) : p.method}
+                    {methodLabel(p.method)}
                     {p.status === "refunded" && (
                       <span className="ml-1 text-[10px] font-bold uppercase">· Dikembalikan</span>
                     )}
