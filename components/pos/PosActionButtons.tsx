@@ -12,7 +12,7 @@ export function PlaceOrderButton({
   );
 }
 
-export function PaymentButton({ label = "Lanjut Bayar" }: { label?: string }) {
+export function PaymentButton({ label = "Bayar" }: { label?: string }) {
   return (
     <button type="submit" className="pos-cta-primary">
       {label}

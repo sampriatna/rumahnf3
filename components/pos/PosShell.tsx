@@ -93,7 +93,7 @@ export function PosShell({
   const itemCount = cart.reduce((s, l) => s + l.qty, 0);
 
   const sidePanel: ReactNode = (
-    <>
+    <div className="flex min-h-0 flex-1 flex-col gap-3">
       <CartPanel
         outletId={outletId}
         shiftId={shift.id}
@@ -112,8 +112,10 @@ export function PosShell({
         posCfg={posCfg}
         billsInStrip={posCfg.openBillMode}
       />
-      <PosShiftOrdersList outletId={outletId} orders={orders} sessionRole={sessionRole} />
-    </>
+      <div className="shrink-0">
+        <PosShiftOrdersList outletId={outletId} orders={orders} sessionRole={sessionRole} />
+      </div>
+    </div>
   );
 
   const mainContent = (
@@ -171,7 +173,7 @@ export function PosShell({
           )}
         </section>
 
-        <aside className="hidden w-[24rem] shrink-0 flex-col gap-3 overflow-y-auto border-l border-slate-200 bg-white/80 p-4 lg:flex">
+        <aside className="pos-pane-checkout hidden w-[24rem] shrink-0 flex-col border-l border-slate-200 bg-gradient-to-b from-white to-navy-50/40 p-3 lg:flex xl:w-[26rem]">
           {sidePanel}
         </aside>
       </div>
@@ -185,13 +187,13 @@ export function PosShell({
   if (drawerCtx) {
     return (
       <PosDrawerLayout ctx={drawerCtx} orderCount={orders.length} shiftTotal={shiftTotal}>
-        <div className="flex min-h-0 flex-1 flex-col">{mainContent}</div>
+        <div className="flex h-full min-h-0 flex-1 flex-col overflow-hidden">{mainContent}</div>
       </PosDrawerLayout>
     );
   }
 
   return (
-    <div className="pos-shell flex min-h-screen flex-col bg-surface">
+    <div className="pos-shell flex h-dvh min-h-0 flex-col overflow-hidden bg-surface">
       {mainContent}
     </div>
   );

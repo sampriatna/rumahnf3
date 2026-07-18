@@ -35,11 +35,16 @@ export function CartPanel({
   const itemCount = cart.reduce((s, l) => s + l.qty, 0);
 
   return (
-    <div className="pos-panel flex flex-col p-4">
-      <div className="mb-3 flex items-center gap-2 border-b border-slate-100 pb-3">
-        <ShoppingCart className="h-5 w-5 text-navy-800" aria-hidden />
-        <h2 className="font-bold text-navy-900">Ringkasan Order</h2>
-        <span className="ml-auto rounded-full bg-navy-800 px-2.5 py-0.5 text-xs font-bold text-white">
+    <div className="pos-panel flex min-h-0 flex-1 flex-col overflow-hidden">
+      <div className="flex shrink-0 items-center gap-2 border-b border-slate-100 px-4 py-3">
+        <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-navy-50 text-navy-800">
+          <ShoppingCart className="h-4 w-4" aria-hidden />
+        </span>
+        <div className="min-w-0 flex-1">
+          <h2 className="font-bold text-navy-900">Ringkasan Order</h2>
+          <p className="text-[11px] text-slate-500">{itemCount} item di keranjang</p>
+        </div>
+        <span className="rounded-lg bg-navy-800 px-2.5 py-1 text-xs font-bold text-gold-400">
           {itemCount}
         </span>
       </div>
@@ -48,39 +53,43 @@ export function CartPanel({
         <EmptyState
           title="Order kosong"
           description="Tap produk di katalog untuk menambahkan item."
-          className="border-0 bg-transparent py-8 shadow-none"
+          className="border-0 bg-transparent py-10 shadow-none"
         />
       ) : (
         <>
-          <ul className="mb-4 max-h-52 space-y-2 overflow-y-auto lg:max-h-[min(40vh,18rem)]">
+          <ul className="min-h-0 flex-1 space-y-2 overflow-y-auto px-4 py-3">
             {cart.map((line) => (
               <CartItem key={line.lineId} line={line} outletId={outletId} shiftId={shiftId} />
             ))}
           </ul>
 
-          <div className="pos-total-box mb-3">
-            <p className="text-[10px] font-bold uppercase text-slate-500">Total</p>
-            <p className="text-right text-2xl font-black text-navy-900">{formatRp(cartTotal)}</p>
+          <div className="pos-checkout-sticky shrink-0 border-t border-slate-100 bg-white px-4 pb-4 pt-3">
+            <div className="pos-total-box mb-3">
+              <div className="flex items-end justify-between gap-2">
+                <p className="text-[10px] font-bold uppercase tracking-wide text-slate-500">Total</p>
+                <p className="text-2xl font-black text-navy-900">{formatRp(cartTotal)}</p>
+              </div>
+            </div>
+
+            <form action={clearCartAction} className="mb-2">
+              <input type="hidden" name="outletId" value={outletId} />
+              <input type="hidden" name="shiftId" value={shiftId} />
+              <button type="submit" className="w-full py-1.5 text-center text-xs font-semibold text-slate-500 underline-offset-2 hover:text-navy-800 hover:underline">
+                Kosongkan Keranjang
+              </button>
+            </form>
+
+            <CartOrderForm
+              outletId={outletId}
+              shiftId={shiftId}
+              channels={channels}
+              posCfg={posCfg}
+              floorTables={floorTables}
+              defaultTable={defaultTable}
+              openBillMode={posCfg.openBillMode}
+              waiters={waiters}
+            />
           </div>
-
-          <form action={clearCartAction} className="mb-3">
-            <input type="hidden" name="outletId" value={outletId} />
-            <input type="hidden" name="shiftId" value={shiftId} />
-            <button type="submit" className="btn-secondary w-full py-2 text-xs">
-              Kosongkan Keranjang
-            </button>
-          </form>
-
-          <CartOrderForm
-            outletId={outletId}
-            shiftId={shiftId}
-            channels={channels}
-            posCfg={posCfg}
-            floorTables={floorTables}
-            defaultTable={defaultTable}
-            openBillMode={posCfg.openBillMode}
-            waiters={waiters}
-          />
         </>
       )}
     </div>
@@ -109,7 +118,7 @@ export function OpenBillsPanel({
   return (
     <>
       {showHeld && (
-        <div className="pos-panel p-4">
+        <div className="pos-panel shrink-0 p-4">
           <h3 className="mb-2 text-[10px] font-bold uppercase tracking-wide text-slate-400">
             Draft / Hold Bill
           </h3>

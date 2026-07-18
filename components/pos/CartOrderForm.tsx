@@ -96,7 +96,7 @@ export function CartOrderForm({
   return (
     <form
       action={openBillMode ? addToOpenBillAction : createOrderAction}
-      className="grid gap-2 border-t border-slate-100 pt-3"
+      className="grid gap-2"
     >
       <input type="hidden" name="outletId" value={outletId} />
       <input type="hidden" name="shiftId" value={shiftId} />
